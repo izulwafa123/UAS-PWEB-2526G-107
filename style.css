@@ -1,0 +1,189 @@
+/* ==========================================================================
+   PREMIUM MODERN DASHBOARD STYLE - SISTEM PENDATAAN BUKU
+   ========================================================================== */
+
+/* 1. Reset & Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: #f8fafc; /* Warna latar belakang super bersih */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+    min-height: 100vh;
+}
+
+/* 2. Navbar Eksklusif */
+.navbar {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%) !important; /* Perpaduan Midnight Black & Dark Purple */
+    padding: 1.25rem 0;
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.45rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #ffffff, #c7d2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 3. Tipografi Judul */
+h2 {
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+.text-muted {
+    color: #64748b !important;
+    font-size: 0.95rem;
+}
+
+/* 4. Kartu Utama (Cards) */
+.card {
+    border: none !important;
+    border-radius: 16px !important; /* Sudut lebih melengkung modern */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 20px 25px -5px rgba(0, 0, 0, 0.05) !important;
+    background: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Header Form Tambah/Edit */
+.card-header {
+    padding: 1.5rem !important;
+    border-bottom: none !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.3px;
+}
+
+.card-header.bg-primary {
+    background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%) !important; /* Indigo Gradient */
+}
+
+.card-header.bg-warning {
+    background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%) !important; /* Amber Gold Gradient */
+    color: #ffffff !important;
+}
+
+/* 5. Tabel Elegan Minimalis */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f1f5f9 !important; /* Abu-abu sangat soft untuk kepala tabel */
+    color: #475569 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+    padding: 1.25rem 1.5rem !important;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody td {
+    padding: 1.25rem 1.5rem !important;
+    vertical-align: middle;
+    color: #334155;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Efek Hover Baris Tabel yang Mewah */
+.table-hover tbody tr:hover {
+    background-color: #f8fafc !important;
+    transform: scale(1.002);
+    box-shadow: inset 4px 0 0 0 #4f46e5; /* Garis aksen vertikal warna ungu di kiri saat di-hover */
+}
+
+/* 6. Form Input Elegan */
+.form-label {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 10px !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    background-color: #f8fafc;
+    color: #0f172a !important;
+    transition: all 0.25s ease-in-out !important;
+}
+
+/* Fokus Input dengan Efek Ring Cahaya */
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15) !important;
+}
+
+/* 7. Desain Tombol Komponen (Buttons) */
+.btn {
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    padding: 0.625rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    letter-spacing: -0.1px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn-sm {
+    padding: 0.4rem 1rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 8px !important;
+}
+
+/* Efek Angkat (TranslateY) & Shadow Dinamis pada Tombol */
+.btn-primary {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3) !important;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4) !important;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3) !important;
+}
+.btn-warning:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4) !important;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.2) !important;
+}
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3) !important;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0 !important;
+    color: #475569 !important;
+    border: none !important;
+}
+.btn-secondary:hover {
+    background-color: #cbd5e1 !important;
+    color: #334155 !important;
+}
